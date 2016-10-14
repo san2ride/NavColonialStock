@@ -8,28 +8,42 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var signUpEmailTextField: UITextField!
+    @IBOutlet weak var signUpPassTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        print(textField)
+        
+        if textField == self.signUpPassTextField {
+            print(textField.text)
+            
+            textField.resignFirstResponder()
+            
+            self.signUpPassTextField.becomeFirstResponder()
+            
+        }
+        return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        
+        if let email = self.signUpEmailTextField.text {
+            
+            if let password = self.signUpPassTextField.text {
+                
+//                self.createUser(email: email, password: password)
+            }
+        }
     }
-    */
-
+    
+    
 }

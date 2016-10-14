@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				A4028E471DB0228400F8C843 /* LoginViewController.swift */,
-				A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */,
 				A4028E4B1DB022C600F8C843 /* RegisterViewController.swift */,
+				A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */,
 				A4028E491DB022B000F8C843 /* ReportsTableViewController.swift */,
 				A4028E4D1DB022EA00F8C843 /* MoreTableViewController.swift */,
 			);
@@ -348,6 +348,7 @@
 				A4028E421DB021EF00F8C843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
