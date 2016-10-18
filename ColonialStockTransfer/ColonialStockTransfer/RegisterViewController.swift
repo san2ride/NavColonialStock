@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
@@ -40,7 +41,24 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             
             if let password = self.signUpPassTextField.text {
                 
-//                self.createUser(email: email, password: password)
+                self.createUser(email: email, password: password)
+            }
+        }
+    }
+    
+    func createUser(email: String, password: String) {
+        
+        FIRAuth.auth()?.createUser(withEmail: email, password: password) {
+            
+            (user, error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+            
+            if let user = user {
+                print(user.uid)
+                print("created success")
             }
         }
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -29,6 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
             
             self.passTextField.becomeFirstResponder()
+            
         }
         
         return true
@@ -40,14 +42,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             if let password = self.passTextField.text {
                 
-//                self.signInUser(email: email, password: password)
+                self.signInUser(email: email, password: password)
             }
         }
     }
 
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
         
-//        self.signOutUser()
+        self.signOutUser()
     }
     
     @IBAction func signUpButtonPressed(_ sender: AnyObject) {
@@ -57,6 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
         
     func deniedAlert() {
+        
         let alert = UIAlertController(title: "Invaled Login", message: "Call 801-355-5740", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Denied",
@@ -66,6 +69,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
     }
-
     
+    func signOutUser() {
+        try! FIRAuth.auth()!.signOut()
+        
+            print("signed out!")
+    }
+    
+    func signInUser(email: String, password: String) {
+    
+        FIRAuth.auth()?.signIn(withEmail: email, password: password) {
+    
+            (user, error) in
+    
+            if error != nil {
+                print(error?.localizedDescription)
+    
+                self.deniedAlert()
+            }
+    
+            if let user = user {
+                print("\(user.email) sighned in!")
+            }
+    
+            self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+        }
+    
+    }
+
 }

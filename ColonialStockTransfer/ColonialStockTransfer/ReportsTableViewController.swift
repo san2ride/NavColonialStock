@@ -10,22 +10,21 @@ import UIKit
 
 class ReportsTableViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var nav = self.navigationController?.navigationBar
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
+        imageView.contentMode = .scaleAspectFit
+        
+        let image = UIImage(named: "colonialnewlogo2")
+        imageView.image = image
+        
+        navigationItem.titleView = imageView
+    
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

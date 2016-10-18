@@ -23,6 +23,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login, email" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KDD-ix-fq6">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
                                 <connections>
                                     <outlet property="delegate" destination="SBn-j6-hBq" id="N9s-uS-ZXf"/>
@@ -34,6 +35,7 @@
                                     <constraint firstAttribute="width" constant="175" id="EYx-Io-7By"/>
                                 </constraints>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="SBn-j6-hBq" id="mZn-4n-Dn4"/>
@@ -52,10 +54,10 @@
                                         </state>
                                         <state key="highlighted" title="sign up"/>
                                         <connections>
-                                            <action selector="signUpButtonPressed:" destination="SBn-j6-hBq" eventType="touchUpInside" id="0zN-Fx-GIP"/>
+                                            <action selector="signUpButtonPressed:" destination="SBn-j6-hBq" eventType="touchUpInside" id="Eoo-Nf-fwR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0G-RB-ZGu">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0G-RB-ZGu">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="3fT-sV-9YQ"/>
@@ -69,7 +71,7 @@
                                             <action selector="loginButtonPressed:" destination="SBn-j6-hBq" eventType="touchUpInside" id="f2m-CO-kEX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-de-MMW">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-de-MMW">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="zEP-Bi-Ilo"/>
@@ -88,29 +90,32 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bMT-4k-1eM" firstAttribute="leading" secondItem="KDD-ix-fq6" secondAttribute="trailing" constant="9" id="3ND-nT-Z0F"/>
                             <constraint firstItem="9ab-Wj-csG" firstAttribute="top" secondItem="m82-YC-B2g" secondAttribute="bottom" constant="478" id="G8A-wQ-bUc"/>
                             <constraint firstItem="KDD-ix-fq6" firstAttribute="top" secondItem="m82-YC-B2g" secondAttribute="bottom" constant="8" symbolic="YES" id="GHD-Vz-s47"/>
-                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="trailing" secondItem="bMT-4k-1eM" secondAttribute="trailing" id="GSg-qC-q7V"/>
-                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="top" secondItem="bMT-4k-1eM" secondAttribute="bottom" constant="13" id="Nqg-4l-dlB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bMT-4k-1eM" secondAttribute="trailing" constant="-8" id="XJK-5g-dZ2"/>
+                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="trailing" secondItem="bMT-4k-1eM" secondAttribute="trailing" id="ahp-hm-2qy"/>
                             <constraint firstItem="bMT-4k-1eM" firstAttribute="baseline" secondItem="KDD-ix-fq6" secondAttribute="baseline" id="bk7-QN-B68"/>
                             <constraint firstItem="m82-YC-B2g" firstAttribute="leading" secondItem="lRv-6i-VxX" secondAttribute="leading" id="lfO-si-NzF"/>
+                            <constraint firstItem="9ab-Wj-csG" firstAttribute="top" secondItem="r0f-Z8-ZDh" secondAttribute="bottom" constant="295" id="nVk-l9-4BI"/>
                             <constraint firstItem="m82-YC-B2g" firstAttribute="top" secondItem="CCy-ZC-Iqq" secondAttribute="bottom" id="qeN-vS-A0l"/>
                             <constraint firstItem="KDD-ix-fq6" firstAttribute="leading" secondItem="lRv-6i-VxX" secondAttribute="leadingMargin" constant="-8" id="tWV-Q4-h2l"/>
                             <constraint firstAttribute="trailing" secondItem="m82-YC-B2g" secondAttribute="trailing" id="w8W-FK-IIS"/>
-                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="leading" secondItem="KDD-ix-fq6" secondAttribute="leading" id="yQK-MX-Nkw"/>
+                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="leading" secondItem="KDD-ix-fq6" secondAttribute="leading" id="yqx-Tl-qXD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Rh-tk-2aW">
-                        <barButtonItem key="backBarButtonItem" title="login" id="lvI-7J-Vv2"/>
+                        <barButtonItem key="backBarButtonItem" title="login" id="lvI-7J-Vv2">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="KDD-ix-fq6" id="KBv-ch-q62"/>
                         <outlet property="passTextField" destination="bMT-4k-1eM" id="iIh-xQ-OJE"/>
                         <segue destination="gph-Zl-PMY" kind="show" identifier="RegisterSegue" id="cnq-QP-CK9"/>
-                        <segue destination="ey3-kK-VYi" kind="show" identifier="DashSegue" id="DqO-KJ-O4r"/>
+                        <segue destination="ey3-kK-VYi" kind="show" identifier="LoginSegue" id="Y5N-bC-Qfv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcx-pY-UIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,18 +135,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aapldb" translatesAutoresizingMaskIntoConstraints="NO" id="0ip-qk-S0L"/>
-                            <tabBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-qB-Gvv">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr2-qB-Gvv">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="taO-ml-A7q"/>
                                 </constraints>
                                 <items>
                                     <tabBarItem title="Reports" image="report" id="DgB-YB-NCU"/>
-                                    <tabBarItem systemItem="more" id="01O-GK-xmk"/>
+                                    <tabBarItem tag="1" systemItem="more" id="01O-GK-xmk"/>
                                 </items>
-                                <color key="barTintColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="delegate" destination="ey3-kK-VYi" id="OwU-nF-pd6"/>
+                                    <outlet property="delegate" destination="ey3-kK-VYi" id="o76-zA-xwt"/>
                                 </connections>
                             </tabBar>
                         </subviews>
@@ -162,17 +168,40 @@
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="moreTabBar" destination="01O-GK-xmk" id="GtO-MY-VYb"/>
+                        <outlet property="reportsTabBar" destination="DgB-YB-NCU" id="crm-Uw-n4A"/>
+                        <segue destination="ULY-Co-gsr" kind="show" identifier="ReportSegue" id="kUV-Zj-dKD"/>
+                        <segue destination="gaN-Jt-UE8" kind="show" identifier="MoreSegue" id="QNy-kX-C7O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0C-kK-LU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="303"/>
+            <point key="canvasLocation" x="193" y="374"/>
         </scene>
-        <!--Reports Table View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Kcz-Iz-UCj">
+            <objects>
+                <tabBarController id="rBr-Ak-wxE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sFN-OH-O0H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIm-KZ-R8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="1131"/>
+        </scene>
+        <!--Reports-->
         <scene sceneID="Ziq-mh-P45">
             <objects>
-                <tableViewController id="ULY-Co-gsr" customClass="ReportsTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ULY-Co-gsr" customClass="ReportsTableViewController" customModule="ColonialStockTransfer" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hFg-2r-7BI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -180,7 +209,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xSp-aa-GbA" id="Cov-RD-Quq">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -190,17 +219,18 @@
                             <outlet property="delegate" destination="ULY-Co-gsr" id="qrx-DI-va9"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Reports" image="report" id="jSa-sy-EFO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmy-oV-yfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="1059"/>
+            <point key="canvasLocation" x="1286" y="209"/>
         </scene>
         <!--More Table View Controller-->
         <scene sceneID="AGP-oW-1r6">
             <objects>
                 <tableViewController id="gaN-Jt-UE8" customClass="MoreTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eoi-SK-jR0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -208,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OmB-GL-ouh" id="SMs-S8-64f">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -218,10 +248,11 @@
                             <outlet property="delegate" destination="gaN-Jt-UE8" id="miy-Fx-Stm"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="more" id="pqg-9y-IXZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHV-fi-SOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="1058"/>
+            <point key="canvasLocation" x="1286" y="886"/>
         </scene>
         <!--SIGN UP-->
         <scene sceneID="wIK-gx-xLM">
@@ -267,7 +298,9 @@
                                 <frame key="frameInset" minX="8" minY="176" width="359" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="signup"/>
+                                <state key="normal" image="signup">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="gph-Zl-PMY" eventType="touchUpInside" id="hoV-xw-aS4"/>
                                 </connections>
@@ -288,21 +321,23 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signUpEmailTextField" destination="hyK-7D-gmT" id="p1J-kL-1Ds"/>
                         <outlet property="signUpPassTextField" destination="gUD-Ln-HxZ" id="a7M-me-PVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDu-QA-B8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="-460"/>
+            <point key="canvasLocation" x="1287" y="-460"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kre-aK-45g">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tjj-NA-vba" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="LkW-p0-R5d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LkW-p0-R5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
