@@ -21,7 +21,7 @@ class DashBoardViewController: UIViewController, UITabBarDelegate {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
         imageView.contentMode = .scaleAspectFit
         
-        let image = UIImage(named: "colonialnewlogo2")
+        let image = UIImage(named: "colonialnewlogo15")
         imageView.image = image
         
         navigationItem.titleView = imageView

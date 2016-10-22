@@ -15,10 +15,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passTextField: UITextField!
     
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         
-        
+        // Do any additional setup after loading the view.
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
