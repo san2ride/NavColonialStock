@@ -10,11 +10,14 @@ import UIKit
 
 class MoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    
+    
     @IBOutlet weak var composeItem: UIBarButtonItem!
     
     var currentMore: More?
     var moresArray = [More]()
-    
+    var more:More!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -31,17 +34,34 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    let AboutUs = More(name: "About Us", imageName: "test")
+    self.moresArray.append(AboutUs)
     
+    let Blog = More(name: "Blog", imageName: "test")
+    self.moresArray.append(Blog)
     
+    let Forms = More(name: "Forms", imageName: "test")
+    self.moresArray.append(Forms)
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+    let FAQ = More(name: "FAQ", imageName: "test")
+    self.moresArray.append(FAQ)
+    
+    let Feedback = More(name: "Feedback", imageName: "test")
+    self.moresArray.append(Feedback)
+        
     }
+    
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 5
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
-//            DataStore.sharedInstance.moreAtIndex()
+        return 5
+        
     }
     
     
@@ -49,12 +69,41 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! MoreTableViewCell
         
-        if let more = DataStore.sharedInstance.moreAtIndex((indexPath as NSIndexPath).row) {
-            
-            cell.moreLabel.text = more.name
-            cell.moreImageView.image = UIImage(named: more.imageName)
-        }
+        let more = self.moresArray[(indexPath as NSIndexPath).row]
+        
+        cell.titleLabel.text = more.name
+        cell.titleImage.image = UIImage(named: more.imageName)
+        
         return cell
+        
+//        switch ((indexPath as NSIndexPath).row) {
+//        case 0:
+//            cell.titleLabel.text = "About Us"
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        case 1:
+//            cell.titleLabel.text = "blog"
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        case 2:
+//            cell.titleLabel.text = "Forms"
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        case 3:
+//            cell.titleLabel.text = "FAQ"
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        case 4:
+//            cell.titleLabel.text = "Feedback"
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        default:
+//            cell.titleLabel.text = ""
+//            cell.titleImage.image = UIImage(named: more.imageName)
+//        }
+//        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        self.currentMore = self.moresArray[(indexPath as NSIndexPath).row]
+        
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

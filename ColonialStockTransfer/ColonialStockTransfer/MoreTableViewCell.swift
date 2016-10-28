@@ -10,14 +10,7 @@ import UIKit
 
 class MoreTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var moreImageView: UIImageView!
-    @IBOutlet weak var moreLabel: UILabel!
+    @IBOutlet weak var titleImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

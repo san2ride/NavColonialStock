@@ -6,6 +6,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cambria.ttf">
+            <string>Cambria</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="vFp-dE-Wvm">
@@ -195,14 +200,14 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-kC-Yec">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="53" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-kC-Yec">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" rowHeight="70" id="feU-1Y-t22" customClass="MoreTableViewCell" customModule="ColonialStockTransfer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell2" rowHeight="53" id="feU-1Y-t22" customClass="MoreTableViewCell" customModule="ColonialStockTransfer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feU-1Y-t22" id="W3W-SU-j9L">
-                                            <frame key="frameInset" width="375" height="69"/>
+                                            <frame key="frameInset" width="342" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutus" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-TL-BQ1">
@@ -212,15 +217,15 @@
                                                         <constraint firstAttribute="width" constant="60" id="3ON-CM-VKE"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv1-B1-Edd">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv1-B1-Edd">
+                                                    <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="24"/>
+                                                    <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="jhK-TL-BQ1" firstAttribute="centerY" secondItem="W3W-SU-j9L" secondAttribute="centerY" id="GzO-FG-006"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Gv1-B1-Edd" secondAttribute="trailing" constant="14" id="Qob-hp-YWB"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Gv1-B1-Edd" secondAttribute="bottom" constant="-2" id="Z5u-0j-ILk"/>
                                                 <constraint firstItem="Gv1-B1-Edd" firstAttribute="top" secondItem="W3W-SU-j9L" secondAttribute="topMargin" id="ZY4-oK-NaW"/>
                                                 <constraint firstItem="Gv1-B1-Edd" firstAttribute="leading" secondItem="jhK-TL-BQ1" secondAttribute="trailing" constant="15" id="dyN-yt-UH2"/>
                                                 <constraint firstAttribute="bottom" secondItem="jhK-TL-BQ1" secondAttribute="bottom" constant="3" id="e9Y-wf-ANh"/>
@@ -230,8 +235,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="moreImageView" destination="jhK-TL-BQ1" id="BYr-Uf-YB5"/>
-                                            <outlet property="moreLabel" destination="Gv1-B1-Edd" id="afN-E7-NZ5"/>
+                                            <outlet property="titleImage" destination="jhK-TL-BQ1" id="IVJ-C7-eMO"/>
+                                            <outlet property="titleLabel" destination="Gv1-B1-Edd" id="0Lr-IB-0Ft"/>
+                                            <segue destination="LNT-c4-s0N" kind="show" identifier="AboutSegue" id="YS4-HP-rUf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -249,7 +255,7 @@
                                 <string key="text">Colonial Stock Transfer Company, Inc.
 66 Exchange Place, 1st floor
 Salt Lake City, UT 84111</string>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -257,7 +263,7 @@ Salt Lake City, UT 84111</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PlX-U1-eWG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -265,7 +271,7 @@ Salt Lake City, UT 84111</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="qcr-c7-wrX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -275,7 +281,7 @@ Salt Lake City, UT 84111</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="u2c-IE-bpL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Cambria" family="Cambria" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -285,24 +291,25 @@ Salt Lake City, UT 84111</string>
                         <constraints>
                             <constraint firstItem="9ck-pP-fVK" firstAttribute="top" secondItem="Uik-4k-HcJ" secondAttribute="bottom" constant="11" id="15m-8x-59K"/>
                             <constraint firstAttribute="trailing" secondItem="9lg-gJ-6ng" secondAttribute="trailing" constant="3" id="1tE-7n-j1Z"/>
-                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="centerX" secondItem="Exv-sz-tDf" secondAttribute="centerX" id="9sf-MI-co5"/>
                             <constraint firstItem="9ck-pP-fVK" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" constant="3" id="E6q-Kz-96N"/>
                             <constraint firstAttribute="trailing" secondItem="Uik-4k-HcJ" secondAttribute="trailing" constant="3" id="Fzf-4p-OoY"/>
                             <constraint firstItem="Uik-4k-HcJ" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" constant="3" id="H4m-i7-92J"/>
-                            <constraint firstAttribute="bottom" secondItem="Zxu-kC-Yec" secondAttribute="bottom" id="HH9-AY-nQZ"/>
-                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="top" secondItem="Exv-sz-tDf" secondAttribute="bottom" constant="41" id="LtS-pU-sIo"/>
                             <constraint firstItem="Uik-4k-HcJ" firstAttribute="top" secondItem="EKq-N4-Rf0" secondAttribute="bottom" constant="3" id="RuL-Ge-8M8"/>
+                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="centerX" secondItem="Exv-sz-tDf" secondAttribute="centerX" id="VTC-l1-5Ag"/>
                             <constraint firstItem="Exv-sz-tDf" firstAttribute="top" secondItem="9lg-gJ-6ng" secondAttribute="bottom" constant="17" id="Zjp-WR-jhB"/>
+                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="top" secondItem="Exv-sz-tDf" secondAttribute="bottom" constant="24" id="aNp-Xe-BEl"/>
+                            <constraint firstAttribute="bottom" secondItem="Zxu-kC-Yec" secondAttribute="bottom" id="dVu-cQ-hy1"/>
                             <constraint firstItem="9lg-gJ-6ng" firstAttribute="top" secondItem="9ck-pP-fVK" secondAttribute="bottom" constant="7" id="dpu-mV-Ft3"/>
                             <constraint firstAttribute="trailing" secondItem="9ck-pP-fVK" secondAttribute="trailing" constant="3" id="eoj-EU-00l"/>
+                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" id="hlt-uF-D0U"/>
                             <constraint firstItem="Exv-sz-tDf" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" constant="3" id="oP3-fR-6CD"/>
                             <constraint firstAttribute="trailing" secondItem="Exv-sz-tDf" secondAttribute="trailing" constant="3" id="ozj-Us-7SE"/>
-                            <constraint firstItem="Zxu-kC-Yec" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" id="vFq-yK-OsQ"/>
                             <constraint firstItem="9lg-gJ-6ng" firstAttribute="leading" secondItem="qME-rK-4m4" secondAttribute="leading" constant="3" id="y9G-Ea-OzE"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Tmw-4I-4FN">
+                        <barButtonItem key="backBarButtonItem" title="More" id="pmc-Q3-kKf"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="EWM-av-TV2"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -313,6 +320,24 @@ Salt Lake City, UT 84111</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUK-W1-8ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="-63.418290854572717"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="vOu-xI-zsv">
+            <objects>
+                <viewController id="LNT-c4-s0N" customClass="AboutUsViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QUz-jL-UHv"/>
+                        <viewControllerLayoutGuide type="bottom" id="lF7-ff-63L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3A1-4M-3yQ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZM-4F-aPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="-52"/>
         </scene>
         <!--Reports-->
         <scene sceneID="Ziq-mh-P45">
@@ -327,7 +352,7 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xSp-aa-GbA" id="Cov-RD-Quq">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -426,7 +451,7 @@ Salt Lake City, UT 84111</string>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LkW-p0-R5d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="LkW-p0-R5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
