@@ -64,7 +64,6 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! MoreTableViewCell
@@ -76,27 +75,6 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
         
-//        switch ((indexPath as NSIndexPath).row) {
-//        case 0:
-//            cell.titleLabel.text = "About Us"
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        case 1:
-//            cell.titleLabel.text = "blog"
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        case 2:
-//            cell.titleLabel.text = "Forms"
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        case 3:
-//            cell.titleLabel.text = "FAQ"
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        case 4:
-//            cell.titleLabel.text = "Feedback"
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        default:
-//            cell.titleLabel.text = ""
-//            cell.titleImage.image = UIImage(named: more.imageName)
-//        }
-//        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
