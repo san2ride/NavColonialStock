@@ -17,7 +17,7 @@
 		A4028E4C1DB022C600F8C843 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4028E4B1DB022C600F8C843 /* RegisterViewController.swift */; };
 		A4028E501DB0232100F8C843 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */; };
 		A430B6C81DC11844000CA53B /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430B6C71DC11844000CA53B /* More.swift */; };
-		A47E56881DBB41EF009DA10F /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E56871DBB41EF009DA10F /* MoreTableViewCell.swift */; };
+		A463AEF51DC91D9700E73002 /* NewsBlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */; };
 		A4AE0FEF1DB0AA8F00A2BF86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4AE0FEE1DB0AA8F00A2BF86 /* GoogleService-Info.plist */; };
 		A4B512081DC7F4C6007200AB /* ShareholderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B512071DC7F4C6007200AB /* ShareholderListTableViewController.swift */; };
 		A4B5120A1DC7F4FA007200AB /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B512091DC7F4FA007200AB /* TransactionsTableViewController.swift */; };
@@ -25,7 +25,6 @@
 		A4B9537B1DB9523400D1CAA4 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B9537A1DB9523400D1CAA4 /* APIController.swift */; };
 		A4B9537D1DB952A400D1CAA4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B9537C1DB952A400D1CAA4 /* DataStore.swift */; };
 		A4DD75411DC3B45700560D6A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */; };
-		A4DD75431DC3BE9200560D6A /* NewsBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD75421DC3BE9200560D6A /* NewsBlog.swift */; };
 		A4DD75491DC3BF5200560D6A /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */; };
 		A4DD754B1DC3C00600560D6A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD754A1DC3C00600560D6A /* FormViewController.swift */; };
 		A4DD754D1DC3C17200560D6A /* faqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */; };
@@ -47,7 +46,7 @@
 		A4028E4B1DB022C600F8C843 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		A430B6C71DC11844000CA53B /* More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
-		A47E56871DBB41EF009DA10F /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsBlogTableViewController.swift; sourceTree = "<group>"; };
 		A4AE0FEE1DB0AA8F00A2BF86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4B512071DC7F4C6007200AB /* ShareholderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareholderListTableViewController.swift; sourceTree = "<group>"; };
 		A4B512091DC7F4FA007200AB /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		A4B9537A1DB9523400D1CAA4 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		A4B9537C1DB952A400D1CAA4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		A4DD75421DC3BE9200560D6A /* NewsBlog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsBlog.swift; sourceTree = "<group>"; };
 		A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
 		A4DD754A1DC3C00600560D6A /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faqTableViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 		A4028E451DB0224400F8C843 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A47E56871DBB41EF009DA10F /* MoreTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -176,7 +173,7 @@
 			children = (
 				A4FFEED41DB96A49005925E8 /* MoreViewController.swift */,
 				A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */,
-				A4DD75421DC3BE9200560D6A /* NewsBlog.swift */,
+				A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */,
 				A4DD754A1DC3C00600560D6A /* FormViewController.swift */,
 				A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */,
 				A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */,
@@ -321,12 +318,11 @@
 				A4B5120A1DC7F4FA007200AB /* TransactionsTableViewController.swift in Sources */,
 				A4028E4A1DB022B000F8C843 /* ReportsTableViewController.swift in Sources */,
 				A4028E481DB0228400F8C843 /* LoginViewController.swift in Sources */,
-				A4DD75431DC3BE9200560D6A /* NewsBlog.swift in Sources */,
 				A4DD754B1DC3C00600560D6A /* FormViewController.swift in Sources */,
+				A463AEF51DC91D9700E73002 /* NewsBlogTableViewController.swift in Sources */,
 				A4B5120C1DC7F51F007200AB /* ProxyVotingTableViewController.swift in Sources */,
 				A4B9537D1DB952A400D1CAA4 /* DataStore.swift in Sources */,
 				A4DD754D1DC3C17200560D6A /* faqTableViewController.swift in Sources */,
-				A47E56881DBB41EF009DA10F /* MoreTableViewCell.swift in Sources */,
 				A4B512081DC7F4C6007200AB /* ShareholderListTableViewController.swift in Sources */,
 				A430B6C81DC11844000CA53B /* More.swift in Sources */,
 				A4FFEED51DB96A49005925E8 /* MoreViewController.swift in Sources */,
