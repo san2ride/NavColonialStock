@@ -25,6 +25,7 @@ class DashBoardViewController: UIViewController, UITabBarDelegate {
         imageView.image = image
         
         navigationItem.titleView = imageView
+        
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

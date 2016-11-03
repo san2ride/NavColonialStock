@@ -1,16 +1,15 @@
 //
-//  AboutUsViewController.swift
+//  MoreTableViewController.swift
 //  ColonialStockTransfer
 //
-//  Created by don't touch me on 10/28/16.
+//  Created by don't touch me on 11/3/16.
 //  Copyright © 2016 trvl, LLC. All rights reserved.
 //
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
-    
-    
+class MoreTableViewController: UITableViewController {
+
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,7 +23,7 @@ class AboutUsViewController: UIViewController {
         imageView.image = image
         
         navigationItem.titleView = imageView
+        
     }
-
 
 }

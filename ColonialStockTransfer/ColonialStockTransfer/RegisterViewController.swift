@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(textField)
         
         if textField == self.signUpPassTextField {

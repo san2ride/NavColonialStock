@@ -14,20 +14,7 @@ class NewsBlogTableViewController: UITableViewController {
     
     
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        var nav = self.navigationController?.navigationBar
-        
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
-        imageView.contentMode = .scaleAspectFit
-        
-        let image = UIImage(named: "colonialnewlogo15")
-        imageView.image = image
-        
-        navigationItem.titleView = imageView
-    }
-
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -41,7 +28,7 @@ class NewsBlogTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BlogCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell8", for: indexPath)
 
         let blogName = blogs[indexPath.row]
         cell.textLabel?.text = blogName

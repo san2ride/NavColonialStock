@@ -24,12 +24,12 @@
 		A4B5120C1DC7F51F007200AB /* ProxyVotingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5120B1DC7F51F007200AB /* ProxyVotingTableViewController.swift */; };
 		A4B9537B1DB9523400D1CAA4 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B9537A1DB9523400D1CAA4 /* APIController.swift */; };
 		A4B9537D1DB952A400D1CAA4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B9537C1DB952A400D1CAA4 /* DataStore.swift */; };
-		A4DD75411DC3B45700560D6A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */; };
-		A4DD75491DC3BF5200560D6A /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */; };
-		A4DD754B1DC3C00600560D6A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD754A1DC3C00600560D6A /* FormViewController.swift */; };
+		A4DC9A361DCBAEFB0098E3C4 /* ContactUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DC9A351DCBAEFB0098E3C4 /* ContactUsTableViewController.swift */; };
+		A4DC9A381DCBB1BC0098E3C4 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DC9A371DCBB1BC0098E3C4 /* MoreTableViewController.swift */; };
+		A4DC9A3A1DCBB6700098E3C4 /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DC9A391DCBB6700098E3C4 /* AboutUsTableViewController.swift */; };
+		A4DC9A3C1DCBB6F00098E3C4 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DC9A3B1DCBB6F00098E3C4 /* FormTableViewController.swift */; };
 		A4DD754D1DC3C17200560D6A /* faqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */; };
 		A4FC988F1DC14E39007CBD81 /* Cambria Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4FC988E1DC14E39007CBD81 /* Cambria Bold.ttf */; };
-		A4FFEED51DB96A49005925E8 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFEED41DB96A49005925E8 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,13 +53,13 @@
 		A4B5120B1DC7F51F007200AB /* ProxyVotingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyVotingTableViewController.swift; sourceTree = "<group>"; };
 		A4B9537A1DB9523400D1CAA4 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		A4B9537C1DB952A400D1CAA4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
-		A4DD754A1DC3C00600560D6A /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		A4DC9A351DCBAEFB0098E3C4 /* ContactUsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewController.swift; sourceTree = "<group>"; };
+		A4DC9A371DCBB1BC0098E3C4 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		A4DC9A391DCBB6700098E3C4 /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
+		A4DC9A3B1DCBB6F00098E3C4 /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faqTableViewController.swift; sourceTree = "<group>"; };
 		A4FC988C1DC14C89007CBD81 /* Cambria.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cambria.ttf; sourceTree = "<group>"; };
 		A4FC988E1DC14E39007CBD81 /* Cambria Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cambria Bold.ttf"; sourceTree = "<group>"; };
-		A4FFEED41DB96A49005925E8 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		AD54B2F65429F014D8BFD7DC /* Pods-ColonialStockTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColonialStockTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColonialStockTransfer/Pods-ColonialStockTransfer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,12 +171,12 @@
 		A4616C5F1DC8465200D0601B /* More */ = {
 			isa = PBXGroup;
 			children = (
-				A4FFEED41DB96A49005925E8 /* MoreViewController.swift */,
-				A4DD75401DC3B45700560D6A /* AboutUsViewController.swift */,
+				A4DC9A371DCBB1BC0098E3C4 /* MoreTableViewController.swift */,
+				A4DC9A351DCBAEFB0098E3C4 /* ContactUsTableViewController.swift */,
+				A4DC9A391DCBB6700098E3C4 /* AboutUsTableViewController.swift */,
 				A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */,
-				A4DD754A1DC3C00600560D6A /* FormViewController.swift */,
+				A4DC9A3B1DCBB6F00098E3C4 /* FormTableViewController.swift */,
 				A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */,
-				A4DD75481DC3BF5200560D6A /* FeedBackViewController.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -317,20 +317,20 @@
 			files = (
 				A4B5120A1DC7F4FA007200AB /* TransactionsTableViewController.swift in Sources */,
 				A4028E4A1DB022B000F8C843 /* ReportsTableViewController.swift in Sources */,
+				A4DC9A361DCBAEFB0098E3C4 /* ContactUsTableViewController.swift in Sources */,
 				A4028E481DB0228400F8C843 /* LoginViewController.swift in Sources */,
-				A4DD754B1DC3C00600560D6A /* FormViewController.swift in Sources */,
 				A463AEF51DC91D9700E73002 /* NewsBlogTableViewController.swift in Sources */,
 				A4B5120C1DC7F51F007200AB /* ProxyVotingTableViewController.swift in Sources */,
 				A4B9537D1DB952A400D1CAA4 /* DataStore.swift in Sources */,
+				A4DC9A3A1DCBB6700098E3C4 /* AboutUsTableViewController.swift in Sources */,
 				A4DD754D1DC3C17200560D6A /* faqTableViewController.swift in Sources */,
 				A4B512081DC7F4C6007200AB /* ShareholderListTableViewController.swift in Sources */,
+				A4DC9A3C1DCBB6F00098E3C4 /* FormTableViewController.swift in Sources */,
+				A4DC9A381DCBB1BC0098E3C4 /* MoreTableViewController.swift in Sources */,
 				A430B6C81DC11844000CA53B /* More.swift in Sources */,
-				A4FFEED51DB96A49005925E8 /* MoreViewController.swift in Sources */,
-				A4DD75491DC3BF5200560D6A /* FeedBackViewController.swift in Sources */,
 				A4028E321DB021EF00F8C843 /* AppDelegate.swift in Sources */,
 				A4028E501DB0232100F8C843 /* DashBoardViewController.swift in Sources */,
 				A4028E4C1DB022C600F8C843 /* RegisterViewController.swift in Sources */,
-				A4DD75411DC3B45700560D6A /* AboutUsViewController.swift in Sources */,
 				A4B9537B1DB9523400D1CAA4 /* APIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
