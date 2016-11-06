@@ -15,11 +15,20 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signUpPassTextField: UITextField!
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var nav = self.navigationController?.navigationItem
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
+        imageView.contentMode = .scaleAspectFit
+        
+        let image = UIImage(named: "colonialnewlogo15")
+        imageView.image = image
+        
+        navigationItem.titleView = imageView
     }
+
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(textField)

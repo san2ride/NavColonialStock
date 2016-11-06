@@ -16,10 +16,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
         
-        // Do any additional setup after loading the view.
+        var nav = self.navigationController?.navigationBar
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
+        imageView.contentMode = .scaleAspectFit
+        
+        let image = UIImage(named: "colonialnewlogo15")
+        imageView.image = image
+        
+        navigationItem.titleView = imageView
     }
+
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(textField.text)

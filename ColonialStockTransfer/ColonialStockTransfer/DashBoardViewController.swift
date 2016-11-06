@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
-class DashBoardViewController: UIViewController, UITabBarDelegate {
+class DashBoardViewController: UIViewController {
     
-    @IBOutlet weak var reportsTabBar: UITabBarItem!
-    @IBOutlet weak var moreTabBar: UITabBarItem!
-
+   
+    @IBOutlet weak var bearBullImage: UIImageView!
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -25,19 +27,35 @@ class DashBoardViewController: UIViewController, UITabBarDelegate {
         imageView.image = image
         
         navigationItem.titleView = imageView
+    }
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        var imagesArray = [UIImage]()
+        
+        for i in 1...4 {
+            
+            if let image = UIImage(named: "\(i)bb") {
+                
+                imagesArray.append(image)
+                print("bb_\(i)")
+            }
+        }
+        
+        bearBullImage.animationImages = imagesArray
+        bearBullImage.animationDuration = 1.5
+        bearBullImage.animationRepeatCount = 0
+        bearBullImage.startAnimating()
         
     }
+
+        
+}
     
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+
         
-        if (item.tag == 0) {
-            self.performSegue(withIdentifier: "ReportSegue", sender: nil)
-        }
-        else if (item.tag == 1) {
-            self.performSegue(withIdentifier: "MoreSegue", sender: nil)
-        }
-        
-    }
+   
     
     
         
@@ -45,4 +63,4 @@ class DashBoardViewController: UIViewController, UITabBarDelegate {
         
     
    
-}
+

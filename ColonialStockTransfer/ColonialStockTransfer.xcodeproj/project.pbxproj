@@ -132,10 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				A4616C5E1DC8463400D0601B /* Reports */,
+				A4616C5F1DC8465200D0601B /* More */,
 				A4028E471DB0228400F8C843 /* LoginViewController.swift */,
 				A4028E4B1DB022C600F8C843 /* RegisterViewController.swift */,
 				A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */,
-				A4616C5F1DC8465200D0601B /* More */,
 				A4B9537A1DB9523400D1CAA4 /* APIController.swift */,
 			);
 			name = Controller;
