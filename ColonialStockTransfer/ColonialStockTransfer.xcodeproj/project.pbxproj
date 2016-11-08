@@ -18,6 +18,10 @@
 		A4028E501DB0232100F8C843 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */; };
 		A430B6C81DC11844000CA53B /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430B6C71DC11844000CA53B /* More.swift */; };
 		A463AEF51DC91D9700E73002 /* NewsBlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */; };
+		A4706D3D1DD16F130077DD52 /* CompanyNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4706D3C1DD16F130077DD52 /* CompanyNewsTableViewController.swift */; };
+		A4706D3F1DD16F740077DD52 /* ColonialAdvantageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4706D3E1DD16F740077DD52 /* ColonialAdvantageViewController.swift */; };
+		A4706D411DD16F990077DD52 /* TestimonialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4706D401DD16F990077DD52 /* TestimonialsViewController.swift */; };
+		A4706D431DD16FC70077DD52 /* CommunityInvolvementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4706D421DD16FC70077DD52 /* CommunityInvolvementViewController.swift */; };
 		A4AE0FEF1DB0AA8F00A2BF86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4AE0FEE1DB0AA8F00A2BF86 /* GoogleService-Info.plist */; };
 		A4B512081DC7F4C6007200AB /* ShareholderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B512071DC7F4C6007200AB /* ShareholderListTableViewController.swift */; };
 		A4B5120A1DC7F4FA007200AB /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B512091DC7F4FA007200AB /* TransactionsTableViewController.swift */; };
@@ -47,6 +51,10 @@
 		A4028E4F1DB0232100F8C843 /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		A430B6C71DC11844000CA53B /* More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
 		A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsBlogTableViewController.swift; sourceTree = "<group>"; };
+		A4706D3C1DD16F130077DD52 /* CompanyNewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyNewsTableViewController.swift; sourceTree = "<group>"; };
+		A4706D3E1DD16F740077DD52 /* ColonialAdvantageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColonialAdvantageViewController.swift; sourceTree = "<group>"; };
+		A4706D401DD16F990077DD52 /* TestimonialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialsViewController.swift; sourceTree = "<group>"; };
+		A4706D421DD16FC70077DD52 /* CommunityInvolvementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityInvolvementViewController.swift; sourceTree = "<group>"; };
 		A4AE0FEE1DB0AA8F00A2BF86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4B512071DC7F4C6007200AB /* ShareholderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareholderListTableViewController.swift; sourceTree = "<group>"; };
 		A4B512091DC7F4FA007200AB /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
@@ -173,12 +181,24 @@
 			children = (
 				A4DC9A371DCBB1BC0098E3C4 /* MoreTableViewController.swift */,
 				A4DC9A351DCBAEFB0098E3C4 /* ContactUsTableViewController.swift */,
-				A4DC9A391DCBB6700098E3C4 /* AboutUsTableViewController.swift */,
+				A4706D441DD16FD50077DD52 /* AboutUs */,
 				A463AEF41DC91D9700E73002 /* NewsBlogTableViewController.swift */,
 				A4DC9A3B1DCBB6F00098E3C4 /* FormTableViewController.swift */,
 				A4DD754C1DC3C17200560D6A /* faqTableViewController.swift */,
 			);
 			name = More;
+			sourceTree = "<group>";
+		};
+		A4706D441DD16FD50077DD52 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				A4DC9A391DCBB6700098E3C4 /* AboutUsTableViewController.swift */,
+				A4706D3C1DD16F130077DD52 /* CompanyNewsTableViewController.swift */,
+				A4706D3E1DD16F740077DD52 /* ColonialAdvantageViewController.swift */,
+				A4706D401DD16F990077DD52 /* TestimonialsViewController.swift */,
+				A4706D421DD16FC70077DD52 /* CommunityInvolvementViewController.swift */,
+			);
+			name = AboutUs;
 			sourceTree = "<group>";
 		};
 		F423DA61A662276E176566F6 /* Frameworks */ = {
@@ -320,11 +340,15 @@
 				A4DC9A361DCBAEFB0098E3C4 /* ContactUsTableViewController.swift in Sources */,
 				A4028E481DB0228400F8C843 /* LoginViewController.swift in Sources */,
 				A463AEF51DC91D9700E73002 /* NewsBlogTableViewController.swift in Sources */,
+				A4706D3F1DD16F740077DD52 /* ColonialAdvantageViewController.swift in Sources */,
 				A4B5120C1DC7F51F007200AB /* ProxyVotingTableViewController.swift in Sources */,
+				A4706D3D1DD16F130077DD52 /* CompanyNewsTableViewController.swift in Sources */,
+				A4706D411DD16F990077DD52 /* TestimonialsViewController.swift in Sources */,
 				A4B9537D1DB952A400D1CAA4 /* DataStore.swift in Sources */,
 				A4DC9A3A1DCBB6700098E3C4 /* AboutUsTableViewController.swift in Sources */,
 				A4DD754D1DC3C17200560D6A /* faqTableViewController.swift in Sources */,
 				A4B512081DC7F4C6007200AB /* ShareholderListTableViewController.swift in Sources */,
+				A4706D431DD16FC70077DD52 /* CommunityInvolvementViewController.swift in Sources */,
 				A4DC9A3C1DCBB6F00098E3C4 /* FormTableViewController.swift in Sources */,
 				A4DC9A381DCBB1BC0098E3C4 /* MoreTableViewController.swift in Sources */,
 				A430B6C81DC11844000CA53B /* More.swift in Sources */,

@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
         imageView.contentMode = .scaleAspectFit
         
-        let image = UIImage(named: "colonialnewlogo15")
+        let image = UIImage(named: "colonialnewlogo16")
         imageView.image = image
         
         navigationItem.titleView = imageView

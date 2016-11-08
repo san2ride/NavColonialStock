@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tjj-NA-vba">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,39 +22,52 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login, email" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KDD-ix-fq6">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
-                                <connections>
-                                    <outlet property="delegate" destination="SBn-j6-hBq" id="N9s-uS-ZXf"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login, password" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bMT-4k-1eM">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="CUL-99-vfe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dVZ-vq-T0S">
+                                <rect key="frame" x="3" y="3" width="369" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login, email" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KDD-ix-fq6">
+                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="SBn-j6-hBq" id="N9s-uS-ZXf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login, password" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bMT-4k-1eM">
+                                        <rect key="frame" x="185.5" y="0.0" width="183.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="SBn-j6-hBq" id="mZn-4n-Dn4"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="EYx-Io-7By"/>
+                                    <constraint firstItem="bMT-4k-1eM" firstAttribute="width" secondItem="KDD-ix-fq6" secondAttribute="width" id="bUI-t1-jDN"/>
                                 </constraints>
-                                <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="SBn-j6-hBq" id="mZn-4n-Dn4"/>
-                                </connections>
-                            </textField>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0f-Z8-ZDh">
+                                <rect key="frame" x="3" y="180" width="369" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34W-OQ-FZA">
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="B75-7O-BXg"/>
                                             <constraint firstAttribute="width" constant="116" id="Uu8-zY-aHx"/>
                                         </constraints>
                                         <state key="normal" image="signup">
-                                            <color key="titleShadowColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" title="sign up"/>
                                         <connections>
@@ -59,9 +75,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0G-RB-ZGu">
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="116" y="0.0" width="116" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="3fT-sV-9YQ"/>
                                             <constraint firstAttribute="width" constant="116" id="Lgo-hQ-0hf"/>
                                         </constraints>
                                         <state key="normal" image="login2">
@@ -73,10 +89,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-de-MMW">
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="zEP-Bi-Ilo"/>
-                                        </constraints>
+                                        <rect key="frame" x="232" y="0.0" width="137" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="signout3">
                                             <color key="titleShadowColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -86,26 +100,29 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KDD-ix-fq6" firstAttribute="leading" secondItem="lRv-6i-VxX" secondAttribute="leadingMargin" constant="-8" id="5M2-vP-Esc"/>
-                            <constraint firstItem="KDD-ix-fq6" firstAttribute="top" secondItem="CCy-ZC-Iqq" secondAttribute="bottom" constant="80" id="7em-tx-mlf"/>
-                            <constraint firstItem="bMT-4k-1eM" firstAttribute="leading" secondItem="KDD-ix-fq6" secondAttribute="trailing" constant="9" id="KGI-ne-kFl"/>
-                            <constraint firstItem="KDD-ix-fq6" firstAttribute="leading" secondItem="r0f-Z8-ZDh" secondAttribute="leading" id="VSk-Id-hhk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bMT-4k-1eM" secondAttribute="trailing" constant="-8" id="XJK-5g-dZ2"/>
-                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="trailing" secondItem="bMT-4k-1eM" secondAttribute="trailing" id="ahp-hm-2qy"/>
-                            <constraint firstItem="9ab-Wj-csG" firstAttribute="top" secondItem="r0f-Z8-ZDh" secondAttribute="bottom" constant="295" id="nVk-l9-4BI"/>
-                            <constraint firstItem="KDD-ix-fq6" firstAttribute="baseline" secondItem="bMT-4k-1eM" secondAttribute="baseline" id="qau-4y-xpM"/>
+                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="leading" secondItem="dVZ-vq-T0S" secondAttribute="leading" id="6WU-UL-PF5"/>
+                            <constraint firstAttribute="trailing" secondItem="CUL-99-vfe" secondAttribute="trailing" id="OgO-ZO-djV"/>
+                            <constraint firstItem="9ab-Wj-csG" firstAttribute="top" secondItem="CUL-99-vfe" secondAttribute="bottom" id="QvU-wc-TKm"/>
+                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="trailing" secondItem="dVZ-vq-T0S" secondAttribute="trailing" id="VcA-s8-q2A"/>
+                            <constraint firstItem="dVZ-vq-T0S" firstAttribute="top" secondItem="CCy-ZC-Iqq" secondAttribute="bottom" constant="3" id="Whw-8G-F1d"/>
+                            <constraint firstAttribute="trailing" secondItem="dVZ-vq-T0S" secondAttribute="trailing" constant="3" id="YLZ-Mb-xG9"/>
+                            <constraint firstItem="dVZ-vq-T0S" firstAttribute="leading" secondItem="lRv-6i-VxX" secondAttribute="leading" constant="3" id="cta-ab-bHX"/>
+                            <constraint firstItem="9ab-Wj-csG" firstAttribute="top" secondItem="r0f-Z8-ZDh" secondAttribute="bottom" constant="393" id="juS-hv-Qde"/>
+                            <constraint firstItem="CUL-99-vfe" firstAttribute="leading" secondItem="lRv-6i-VxX" secondAttribute="leading" id="kj9-m6-zVv"/>
+                            <constraint firstItem="CUL-99-vfe" firstAttribute="top" secondItem="CCy-ZC-Iqq" secondAttribute="bottom" id="ubh-Yq-SFG"/>
+                            <constraint firstItem="r0f-Z8-ZDh" firstAttribute="top" secondItem="lRv-6i-VxX" secondAttribute="top" constant="180" id="xvA-1R-nr9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Rh-tk-2aW">
-                        <barButtonItem key="backBarButtonItem" title="Item" id="lvI-7J-Vv2">
-                            <color key="tintColor" red="0.25490196078431371" green="0.5725490196078431" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="backBarButtonItem" image="login" id="jQn-W1-9vW">
+                            <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -117,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcx-pY-UIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572" y="-463"/>
+            <point key="canvasLocation" x="-572" y="-463.71814092953525"/>
         </scene>
         <!--More Table View Controller-->
         <scene sceneID="B0K-JA-eIw">
@@ -134,11 +151,11 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fmg-Pd-gcQ" id="Cu2-lL-cDT">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MQU-nJ-BbU">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -154,11 +171,11 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xoO-m0-ZUh" id="hX2-g0-3LY">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jx8-ZS-9Iu">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -174,11 +191,11 @@
                                         <rect key="frame" x="0.0" y="144" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9t-m4-nnp" id="c7T-6E-dAl">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="News Blog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xdb-tF-LrY">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -194,11 +211,11 @@
                                         <rect key="frame" x="0.0" y="188" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="03T-dn-Ney" id="Rdj-fM-E2Z">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Forms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jbC-BN-pFW">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -214,11 +231,11 @@
                                         <rect key="frame" x="0.0" y="232" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c4d-kt-gaN" id="iN4-oA-0tl">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ixo-Zx-d7R">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,7 +255,9 @@
                             <outlet property="delegate" destination="Aky-Cb-JRv" id="ROW-eI-Qa7"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="2JF-DV-HLG"/>
+                    <tabBarItem key="tabBarItem" title="" image="more" id="2JF-DV-HLG"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12t-rL-wit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +268,7 @@
             <objects>
                 <tableViewController title="CONTACT US" id="AqD-sr-STU" customClass="ContactUsTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="S2b-G2-zAH">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -259,11 +278,11 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ghN-uo-gRn" id="0NI-AX-QDb">
-                                            <frame key="frameInset" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="346" id="jAr-oD-FiA">
-                                                    <frame key="frameInset" minX="15" width="345" height="74"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="74"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">66 Exchange Place, 1st floor
 Salt Lake City, UT 84111</string>
@@ -278,11 +297,11 @@ Salt Lake City, UT 84111</string>
                                         <rect key="frame" x="0.0" y="131" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zxp-qz-boY" id="Njr-jp-An8">
-                                            <frame key="frameInset" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Phone: 801-355-5740" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tmy-64-m2x">
-                                                    <frame key="frameInset" minX="15" width="345" height="74"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="74"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -295,11 +314,11 @@ Salt Lake City, UT 84111</string>
                                         <rect key="frame" x="0.0" y="206" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nYe-by-SFL" id="bKn-k4-EBI">
-                                            <frame key="frameInset" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Fax: 801-355-6505" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T1r-9O-AkU">
-                                                    <frame key="frameInset" minX="15" width="345" height="74"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="74"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -320,30 +339,342 @@ Salt Lake City, UT 84111</string>
                     <navigationItem key="navigationItem" title="CONTACT US" id="hOF-f8-WsX">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="meS-e1-X2k"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaB-41-o8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="151" y="1052"/>
         </scene>
-        <!--ABOUT US-->
-        <scene sceneID="K42-vd-gPP">
+        <!--Company News Table View Controller-->
+        <scene sceneID="Bz2-2I-U6F">
             <objects>
-                <tableViewController title="ABOUT US" id="bLs-nz-gnz" customClass="AboutUsTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C7P-rQ-0Oy">
+                <tableViewController id="mbH-ed-uRi" customClass="CompanyNewsTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uV0-lg-guf">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell7" id="HbH-St-4gE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyNewsCell" id="x0R-S9-aap">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HbH-St-4gE" id="EJq-f4-CoU">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x0R-S9-aap" id="KKA-MO-N58">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mbH-ed-uRi" id="9Uc-gt-i3w"/>
+                            <outlet property="delegate" destination="mbH-ed-uRi" id="Gtq-RS-Omc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKm-I3-VDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="1884"/>
+        </scene>
+        <!--COLONIAL ADVANTAGE-->
+        <scene sceneID="Xsm-f4-c3a">
+            <objects>
+                <viewController title="COLONIAL ADVANTAGE" id="cOL-zF-Xd1" customClass="ColonialAdvantageViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdA-MF-r4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="JP6-3Y-kTZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Zr-U1-N1u">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hempbg" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-4X-4Jb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uz2-ek-imS">
+                                <rect key="frame" x="16" y="8" width="343" height="538"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">In an increasingly complex business world, Colonial Stock Transfer can save you and your shareholders money while providing the most professional, cost effective and innovative issuer services in the industry. Our services span internet, telephone and paper channels that are designed for transparency to the end investor — from initial client inquiry to fully customizable outputs. Our issuer services include:
+
+Transfer agency and registrar
+SEC EDGAR and XBRL filings
+Proxy &amp; annual meeting management
+DTC eligibility applications
+Employee plan administration and software
+Press release distribution
+Blue sky filing and compliance
+Issuer consultation services
+Client Benefits
+
+First Class Personalized Service
+Whether it is a stock transfer, proxy, inquiry or something else, Colonial provides personalized and professional customer service for you and your shareholders every time. There is no need to wait tirelessly for a response. Our live representatives provide support on an individual basis with immediate and direct responses via telephone and email. Further, we are always improving our processes and systems by listening to the feedback of our clients through surveys, online feedback, and random customer service sampling.
+
+Cost Saving Efficiencies
+Since Colonial is not burdened with significant legacy costs and overhead, we are able to deliver cost saving efficiencies to both you and your shareholders. Our commitment to technology, paper elimination efforts, flexible pricing plans, and issuer education on reducing costs will leave you assured that you are receiving all of the possible cost saving benefits and more.
+
+Increased Networking Opportunities
+In addition to working in the transfer agent business, members of our team have worked in the brokerage, market making, and investment banking industries. You can benefit from our increased industry insight and networking opportunities with hundreds of industry contacts: attorneys, accountants, investment bankers, lenders, and brokers.
+
+Innovative Technology
+With the ability to access your account online, you can view shareholder reports in real‐time with the option to sort, search, export, and update data. Additionally, you can perform shareholder address updates, issuance requests, and manage your proxy campaign from start to finish. Shareholders, who sign up for internet account access, are able to view holdings and make updates to their account.
+
+Fast Turnaround Times
+For several years, the SEC and other regulators have required routine stock transfers to be processed within three business days. At Colonial, we went a step further by creating a one business day turnaround policy to ensure that our customers’ investments weren’t negatively affected by the processing timelines allotted by the SEC. It is our goal and commitment to provide immediate turnaround on all requests, whether it is a stock transfer, issuance, or something else.
+
+One Business Day Setup
+We are able to transition and setup your company in a timely manner so that you don’t see any interruptions in your securities processing or trading. Our experts will import your shareholder data into our systems within one business day of receipt and guide you through each step of the setup process.
+
+Contact a sales representative to obtain a quote or learn more about our issuer services at 877-285-8605.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JP6-3Y-kTZ" firstAttribute="top" secondItem="Mez-4X-4Jb" secondAttribute="bottom" id="8JP-FK-8gt"/>
+                            <constraint firstAttribute="trailing" secondItem="uz2-ek-imS" secondAttribute="trailing" constant="16" id="8Jk-PW-xKD"/>
+                            <constraint firstItem="JP6-3Y-kTZ" firstAttribute="top" secondItem="uz2-ek-imS" secondAttribute="bottom" constant="8" id="C0S-hT-2Xj"/>
+                            <constraint firstAttribute="trailing" secondItem="Mez-4X-4Jb" secondAttribute="trailing" id="Qtq-lk-odz"/>
+                            <constraint firstItem="uz2-ek-imS" firstAttribute="top" secondItem="BdA-MF-r4I" secondAttribute="bottom" constant="8" id="S4U-m9-sns"/>
+                            <constraint firstItem="Mez-4X-4Jb" firstAttribute="top" secondItem="BdA-MF-r4I" secondAttribute="bottom" id="Zhy-FY-llk"/>
+                            <constraint firstItem="uz2-ek-imS" firstAttribute="leading" secondItem="9Zr-U1-N1u" secondAttribute="leading" constant="16" id="bRC-qB-mae"/>
+                            <constraint firstItem="Mez-4X-4Jb" firstAttribute="leading" secondItem="9Zr-U1-N1u" secondAttribute="leading" id="xVK-vc-KWu"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gos-t3-BQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="1882.3088455772115"/>
+        </scene>
+        <!--TESTIMONIALS-->
+        <scene sceneID="kEz-Ip-M10">
+            <objects>
+                <viewController title="TESTIMONIALS" id="ELe-6S-vJW" customClass="TestimonialsViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mWE-Rz-QOu"/>
+                        <viewControllerLayoutGuide type="bottom" id="OF7-4S-ofE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H7i-2j-p5K">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hempbg" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-od-xbq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hgX-Rd-eHG">
+                                <rect key="frame" x="3" y="3" width="369" height="548"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Learn what others have said about working with Colonial Stock Transfer. If you are a prospective client and would like a list of references, please contact us.
+
+
+
+"startOur company has used Colonial Stock Transfer for over 4 years. I’m convinced that the level of service we have received cannot be matched. The staff is extremely knowledgeable and everything they have done for us has been either on-time or ahead of time. I have referred them to many of my associates."
+
+C. Melton, CEO
+
+
+
+"startColonial Stock Transfer’s team of highly experienced professionals provide unparalleled industry service. My needs are addressed promptly and their customer care level is the highest our firm has ever experienced. Our firm has worked with over 30 transfer agents in the industry and Colonial exceeds any of their peers performance by any measure."
+
+S. Levin, Capital Raising
+
+
+
+"startColonial Stock Transfer responded to my needs very quickly. They resolved some very complex registration issues for me in a very short period. I am very happy with their service and was pleasantly surprised by their pricing."
+
+S. Slater, Shareholder
+
+
+
+"startWe are very pleased with the high quality of service provided by Colonial Stock Transfer."
+
+A. Rahim., Manager
+
+
+
+"startColonial Stock Transfer delivers comprehensive solutions to often complex issues with an unmatched and consistent degree of professionalism, competence and courtesy. I enjoy working with them and recommend their services without reservation."
+
+M. Abrams, CEO
+
+
+
+"startI have been doing business with Colonial Stock Transfer for several years, and a number of things come to mind when I think of why I do business with Colonial. First, the courtesy and immediate response I receive when I call. Second, Colonial has a way to quickly respond to complex situations and provides the necessary advice needed that protects the issuer, seller, buyer, and whoever may be involved. Third, I am very pleased with everyone that I have had the opportunity to communicate with at Colonial. Fourth, I find there fees to be very competitive."
+
+J. Shipley, Majority Shareholder
+
+
+
+We request feedback and reviews through annual surveys and random customer sampling because we believe in providing the best customer service possible. We depend on the satisfaction of our customers and their needs being met - it is our business. To learn more about our surveys and testimonials, please contact us.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xxr-od-xbq" secondAttribute="trailing" id="0Fg-t7-6YS"/>
+                            <constraint firstItem="hgX-Rd-eHG" firstAttribute="leading" secondItem="H7i-2j-p5K" secondAttribute="leading" constant="3" id="ACo-Y2-BgG"/>
+                            <constraint firstItem="hgX-Rd-eHG" firstAttribute="top" secondItem="mWE-Rz-QOu" secondAttribute="bottom" constant="3" id="LW0-Yy-tKr"/>
+                            <constraint firstItem="Xxr-od-xbq" firstAttribute="top" secondItem="mWE-Rz-QOu" secondAttribute="bottom" id="QWI-Lz-QMK"/>
+                            <constraint firstItem="OF7-4S-ofE" firstAttribute="top" secondItem="Xxr-od-xbq" secondAttribute="bottom" id="Qbd-2X-rzS"/>
+                            <constraint firstItem="OF7-4S-ofE" firstAttribute="top" secondItem="hgX-Rd-eHG" secondAttribute="bottom" constant="3" id="nao-0O-hlc"/>
+                            <constraint firstAttribute="trailing" secondItem="hgX-Rd-eHG" secondAttribute="trailing" constant="3" id="ptA-y2-3Y9"/>
+                            <constraint firstItem="Xxr-od-xbq" firstAttribute="leading" secondItem="H7i-2j-p5K" secondAttribute="leading" id="zWN-Xt-0ye"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKJ-BH-Tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="1882.3088455772115"/>
+        </scene>
+        <!--Community Involvement View Controller-->
+        <scene sceneID="Idl-1s-aOT">
+            <objects>
+                <viewController id="EKS-88-cHw" customClass="CommunityInvolvementViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oLp-Hy-s9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="wFI-lT-ZXC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdO-kp-uPh">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hempbg" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-BM-I0H">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-vp-dQc">
+                                <rect key="frame" x="3" y="3" width="369" height="548"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">We believe in giving back. Each of our team members is actively involved in the community to provide service and sustenance to those in need and distress.
+
+
+
+ucccf logoColonial Stock Transfer is a participant in the Utah Cultural Celebration Center Foundation. The foundation focuses on building the community through promoting ethnic arts, cultural programs, and performances through educational outreach and special events. Most events are free and open to the public.
+
+Participate with Utah Cultural Celebration Center Foundation
+
+
+
+utah foster care logoColonial Stock Transfer has been a proud sponsor and participant of the Utah Foster Care since 2012. Utah Foster Care finds, trains, and supports families to care for children placed in foster care.
+
+Participate with Utah Foster Care
+
+
+
+st. vincent depaulTeam members of Colonial Stock Transfer donate their time at the St. Vincent de Paul Center in downtown Salt Lake City to assist in the preparation of free hot and nutritious meals to low-income and homeless individuals and families.
+
+Participate with the St. Vincent de Paul Center</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QCb-BM-I0H" firstAttribute="top" secondItem="oLp-Hy-s9C" secondAttribute="bottom" id="R8G-hT-0hn"/>
+                            <constraint firstItem="wFI-lT-ZXC" firstAttribute="top" secondItem="6gP-vp-dQc" secondAttribute="bottom" constant="3" id="Skx-1F-dbB"/>
+                            <constraint firstAttribute="trailing" secondItem="6gP-vp-dQc" secondAttribute="trailing" constant="3" id="Yhg-pG-OrN"/>
+                            <constraint firstItem="6gP-vp-dQc" firstAttribute="top" secondItem="oLp-Hy-s9C" secondAttribute="bottom" constant="3" id="aTa-rS-gMd"/>
+                            <constraint firstItem="QCb-BM-I0H" firstAttribute="leading" secondItem="cdO-kp-uPh" secondAttribute="leading" id="eVX-rY-ft3"/>
+                            <constraint firstAttribute="trailing" secondItem="QCb-BM-I0H" secondAttribute="trailing" id="iW0-K2-Nwe"/>
+                            <constraint firstItem="6gP-vp-dQc" firstAttribute="leading" secondItem="cdO-kp-uPh" secondAttribute="leading" constant="3" id="rJI-Ia-bIV"/>
+                            <constraint firstItem="wFI-lT-ZXC" firstAttribute="top" secondItem="QCb-BM-I0H" secondAttribute="bottom" id="v3H-wE-ggn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOw-cJ-wRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496.8" y="1881.4092953523241"/>
+        </scene>
+        <!--ABOUT US-->
+        <scene sceneID="K42-vd-gPP">
+            <objects>
+                <tableViewController title="ABOUT US" id="bLs-nz-gnz" customClass="AboutUsTableViewController" customModule="ColonialStockTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="C7P-rQ-0Oy">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="About Us" id="x35-gC-zmK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="2B4-sH-ig4" style="IBUITableViewCellStyleDefault" id="HbH-St-4gE">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HbH-St-4gE" id="EJq-f4-CoU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Company News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2B4-sH-ig4">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mbH-ed-uRi" kind="show" id="3Uj-zR-ZZH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eHA-Zl-dwi" style="IBUITableViewCellStyleDefault" id="40V-fo-qkE">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="40V-fo-qkE" id="jhN-xY-LUu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Colonial Advantage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eHA-Zl-dwi">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cOL-zF-Xd1" kind="show" id="wa3-xM-uZQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ClF-0r-62Z" style="IBUITableViewCellStyleDefault" id="qZe-cO-RZF">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qZe-cO-RZF" id="EsZ-l0-ccj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Testamonials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ClF-0r-62Z">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ELe-6S-vJW" kind="show" id="Hpg-VK-KB9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="S1W-7u-aPD" style="IBUITableViewCellStyleDefault" id="WMa-yp-2HD">
+                                        <rect key="frame" x="0.0" y="188" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WMa-yp-2HD" id="fa6-Vi-bsU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Community Involvement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S1W-7u-aPD">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EKS-88-cHw" kind="show" id="eBm-CK-eh4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="bLs-nz-gnz" id="gFx-8c-wf4"/>
                             <outlet property="delegate" destination="bLs-nz-gnz" id="doC-wC-TjW"/>
@@ -367,11 +698,11 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D1L-M8-6JY" id="LRG-FU-kv1">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eLu-Y0-KaQ">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -404,7 +735,7 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dF7-MZ-IwQ" id="hTD-DZ-sc4">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -432,11 +763,11 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4UW-fd-L7e" id="0g1-Ee-zLg">
-                                    <frame key="frameInset" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R0w-fi-bjR">
-                                            <frame key="frameInset" minX="15" width="345" height="50"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -462,7 +793,6 @@ Salt Lake City, UT 84111</string>
         <scene sceneID="FC7-4L-dWc">
             <objects>
                 <tabBarController id="aQ0-Pz-s3e" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Zw6-pC-94o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -476,7 +806,7 @@ Salt Lake City, UT 84111</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wg-RQ-xE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150" y="-464"/>
+            <point key="canvasLocation" x="369" y="-464"/>
         </scene>
         <!--Reports-->
         <scene sceneID="Ziq-mh-P45">
@@ -486,8 +816,6 @@ Salt Lake City, UT 84111</string>
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="sectionIndexColor" red="0.03876201923" green="0.03876201923" blue="0.03876201923" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Reports" id="7zs-Xk-Yv3">
                                 <cells>
@@ -495,11 +823,11 @@ Salt Lake City, UT 84111</string>
                                         <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xSp-aa-GbA" id="Cov-RD-Quq">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shareholder List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaD-4r-pW9">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -508,18 +836,18 @@ Salt Lake City, UT 84111</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="QkE-EN-9EI" kind="show" id="Pyb-fp-wEj"/>
+                                            <segue destination="QkE-EN-9EI" kind="show" id="Iv8-u3-Fy5"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="9dt-dj-lKk" style="IBUITableViewCellStyleDefault" id="yrK-a0-056">
                                         <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yrK-a0-056" id="W6X-v3-Nda">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9dt-dj-lKk">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -528,18 +856,18 @@ Salt Lake City, UT 84111</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="uMo-yh-1Xh" kind="show" id="4iu-ZF-jqE"/>
+                                            <segue destination="uMo-yh-1Xh" kind="show" id="j8J-1y-lYu"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="FWx-9M-MZH" style="IBUITableViewCellStyleDefault" id="rJJ-bg-W5a">
                                         <rect key="frame" x="0.0" y="144" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJJ-bg-W5a" id="Oyw-Lb-Voc">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Proxy Voting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FWx-9M-MZH">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -548,7 +876,7 @@ Salt Lake City, UT 84111</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="WGP-Nq-wEu" kind="show" id="HcG-nx-4hw"/>
+                                            <segue destination="WGP-Nq-wEu" kind="show" id="RVz-bL-3fs"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -561,11 +889,12 @@ Salt Lake City, UT 84111</string>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Reports" image="report" id="0FZ-ff-y0k"/>
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmy-oV-yfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="-593"/>
+            <point key="canvasLocation" x="1497" y="-600"/>
         </scene>
         <!--Home-->
         <scene sceneID="vQa-b4-8yG">
@@ -579,7 +908,9 @@ Salt Lake City, UT 84111</string>
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-OF-zSe"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-OF-zSe">
+                                <rect key="frame" x="68" y="145" width="239" height="264"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -589,7 +920,9 @@ Salt Lake City, UT 84111</string>
                             <constraint firstAttribute="trailingMargin" secondItem="Iw9-OF-zSe" secondAttribute="trailing" constant="52" id="vmb-yJ-3RE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="p9y-HF-Z9E"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="stock" id="p9y-HF-Z9E"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="bearBullImage" destination="Iw9-OF-zSe" id="jiJ-9D-MsI"/>
                     </connections>
@@ -611,7 +944,7 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ev3-a9-SXL" id="4Y5-qT-szH">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -624,7 +957,7 @@ Salt Lake City, UT 84111</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwq-tE-Yx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="-1318"/>
+            <point key="canvasLocation" x="2310" y="-1332"/>
         </scene>
         <!--TRANSACTIONS-->
         <scene sceneID="Jj2-h3-FR6">
@@ -639,7 +972,7 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBL-t7-e3W" id="lMk-aN-vvZ">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -652,7 +985,7 @@ Salt Lake City, UT 84111</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30b-tt-tRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="-661"/>
+            <point key="canvasLocation" x="2310" y="-650"/>
         </scene>
         <!--PROXY VOTING-->
         <scene sceneID="Rw7-l1-7kl">
@@ -667,7 +1000,7 @@ Salt Lake City, UT 84111</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOV-Sx-qu3" id="k2n-jY-CnK">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -680,7 +1013,7 @@ Salt Lake City, UT 84111</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXA-IM-fX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="-19"/>
+            <point key="canvasLocation" x="2310" y="-5"/>
         </scene>
         <!--SIGN UP-->
         <scene sceneID="wIK-gx-xLM">
@@ -694,41 +1027,50 @@ Salt Lake City, UT 84111</string>
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colonialnewlogo" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-hb-1Gi">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="pil-g9-DVq"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="yAS-bp-jVU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sign up, email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-7D-gmT">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
-                                <connections>
-                                    <outlet property="delegate" destination="gph-Zl-PMY" id="em8-w7-yOl"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sign up, password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Ln-HxZ">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vn0-oP-Pyh">
+                                <rect key="frame" x="3" y="0.0" width="369" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sign up, email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-7D-gmT">
+                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="gph-Zl-PMY" id="em8-w7-yOl"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sign up, password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-Ln-HxZ">
+                                        <rect key="frame" x="185.5" y="0.0" width="183.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="RhS-yC-5Jo"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="gph-Zl-PMY" id="wPT-S7-zBe"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="RhS-yC-5Jo"/>
-                                    <constraint firstAttribute="width" constant="175" id="qxt-X7-aCP"/>
+                                    <constraint firstItem="gUD-Ln-HxZ" firstAttribute="width" secondItem="hyK-7D-gmT" secondAttribute="width" id="AJv-xg-LSV"/>
+                                    <constraint firstAttribute="height" constant="30" id="zyW-2d-x8s"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go"/>
-                                <connections>
-                                    <outlet property="delegate" destination="gph-Zl-PMY" id="wPT-S7-zBe"/>
-                                </connections>
-                            </textField>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swG-OR-EAX">
-                                <frame key="frameInset" minX="8" minY="339" width="359" height="33"/>
+                                <rect key="frame" x="8" y="180" width="359" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="signup">
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="signup"/>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="gph-Zl-PMY" eventType="touchUpInside" id="hoV-xw-aS4"/>
                                 </connections>
@@ -737,15 +1079,13 @@ Salt Lake City, UT 84111</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="DRL-hb-1Gi" secondAttribute="trailing" id="5i6-PP-pw0"/>
-                            <constraint firstItem="gUD-Ln-HxZ" firstAttribute="leading" secondItem="hyK-7D-gmT" secondAttribute="trailing" constant="9" id="DtR-0Q-b7B"/>
-                            <constraint firstItem="hyK-7D-gmT" firstAttribute="top" secondItem="DRL-hb-1Gi" secondAttribute="bottom" constant="8" id="GF4-Rb-KLy"/>
-                            <constraint firstItem="gUD-Ln-HxZ" firstAttribute="top" secondItem="DRL-hb-1Gi" secondAttribute="bottom" constant="8" id="JHt-hh-R9s"/>
-                            <constraint firstItem="hyK-7D-gmT" firstAttribute="leading" secondItem="5IX-Qj-YVj" secondAttribute="leadingMargin" constant="-8" id="Vpf-pp-fSS"/>
-                            <constraint firstAttribute="trailing" secondItem="gUD-Ln-HxZ" secondAttribute="trailing" constant="8" id="XIw-y2-aWl"/>
-                            <constraint firstItem="DRL-hb-1Gi" firstAttribute="leading" secondItem="5IX-Qj-YVj" secondAttribute="leading" id="Zqm-BE-BAA"/>
-                            <constraint firstItem="hyK-7D-gmT" firstAttribute="baseline" secondItem="gUD-Ln-HxZ" secondAttribute="baseline" id="bGw-QB-4gj"/>
-                            <constraint firstItem="DRL-hb-1Gi" firstAttribute="top" secondItem="E5A-ww-hX5" secondAttribute="bottom" id="vtp-ha-RnA"/>
+                            <constraint firstItem="yAS-bp-jVU" firstAttribute="leading" secondItem="5IX-Qj-YVj" secondAttribute="leading" id="6C3-3N-WHX"/>
+                            <constraint firstItem="Xd4-87-7gn" firstAttribute="top" secondItem="yAS-bp-jVU" secondAttribute="bottom" id="DUz-C8-i7G"/>
+                            <constraint firstAttribute="trailing" secondItem="yAS-bp-jVU" secondAttribute="trailing" id="L1P-kN-7nr"/>
+                            <constraint firstItem="yAS-bp-jVU" firstAttribute="top" secondItem="E5A-ww-hX5" secondAttribute="bottom" id="LOs-3D-f5Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Vn0-oP-Pyh" secondAttribute="trailing" constant="3" id="QwZ-xG-lJM"/>
+                            <constraint firstItem="Vn0-oP-Pyh" firstAttribute="leading" secondItem="5IX-Qj-YVj" secondAttribute="leading" constant="3" id="Ytg-wd-cAt"/>
+                            <constraint firstItem="Vn0-oP-Pyh" firstAttribute="top" secondItem="E5A-ww-hX5" secondAttribute="bottom" id="he0-By-Lqu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -760,18 +1100,16 @@ Salt Lake City, UT 84111</string>
         <!--Navigation Controller-->
         <scene sceneID="Kre-aK-45g">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tjj-NA-vba" sceneMemberID="viewController">
+                <navigationController id="tjj-NA-vba" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="LkW-p0-R5d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" backIndicatorImage="stock" id="LkW-p0-R5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.57254901960000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
@@ -791,11 +1129,14 @@ Salt Lake City, UT 84111</string>
         </scene>
     </scenes>
     <resources>
-        <image name="colonialnewlogo" width="500" height="164"/>
-        <image name="home" width="32" height="32"/>
+        <image name="clouds" width="294" height="264"/>
+        <image name="hempbg" width="750" height="750"/>
+        <image name="login" width="64" height="64"/>
         <image name="login2" width="32" height="32"/>
+        <image name="more" width="32" height="32"/>
         <image name="report" width="32" height="32"/>
         <image name="signout3" width="32" height="32"/>
         <image name="signup" width="32" height="32"/>
+        <image name="stock" width="32" height="32"/>
     </resources>
 </document>

@@ -13,17 +13,17 @@ class DashBoardViewController: UIViewController {
     
    
     @IBOutlet weak var bearBullImage: UIImageView!
-    @IBOutlet weak var navBar: UINavigationItem!
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        var nav = self.navigationController?.navigationBar
+        var nav = self.navigationController?.navigationItem
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
         imageView.contentMode = .scaleAspectFit
         
-        let image = UIImage(named: "colonialnewlogo15")
+        let image = UIImage(named: "colonialnewlogo16")
         imageView.image = image
         
         navigationItem.titleView = imageView
@@ -31,6 +31,8 @@ class DashBoardViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         var imagesArray = [UIImage]()
         
